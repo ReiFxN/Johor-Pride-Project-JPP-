@@ -122,8 +122,8 @@ begin
             ' dengan ', maxSuara, ' suara!');
     readln;
 end;
-procedure MenuUtama();
 begin
+    jumlahKandidat := 0;
     repeat
         clrscr;
         writeln('=== SISTEM VOTING SEDERHANA ===');
@@ -145,9 +145,4 @@ begin
             readln;
         end;
     until menu = 0;
-end;
-
-begin
-    jumlahKandidat := 0;
-    MenuUtama();
 end.
